@@ -2,9 +2,7 @@
 
 ## Status
 
-**DEV**
-
-Add text about status is TRIAL that if the implementation of the guide takes place, openEHR Finland wants feedback as part of the verification process for the implementation guide.
+**TRIAL**
 
 ## Version history
 
