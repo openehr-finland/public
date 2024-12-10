@@ -1,4 +1,4 @@
-# openEHR Finlandin dokumentaatio ja tukimateriaalit
+# openEHR Finlandin dokumentaatio ja tukimateriaalit (TRIAL)
 
 OpenEHR Finland on aloittanut toimintansa kesäkuussa 2022 ja se toimii HL7 Finlandin alatyöryhmänä. Toiminnan tarkoituksena on edistää semanttista yhteentoimivuutta, tiedon hyödynnettävyyttä, yhteistyöstä sekä tietämyksen kehittymistä openEHR:stä. OpenEHR Finlandin manifestin voit lukea [täältä](https://www.hl7.fi/openehr-alatyoryhma/manifesti-2022-openehr-finland/). 
 
