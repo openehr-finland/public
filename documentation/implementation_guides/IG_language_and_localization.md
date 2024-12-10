@@ -58,7 +58,7 @@ The translation work primarily aims to ensure compatibility with the Finnish ope
 | Translate the archetype, or the archetypes from scratch or continue on the previous translation (if available). Follow guidelines described on this page. | Local actor | |
 | Review the translation in local group. | Local actor | |
 | Review the translation in local group. | Local actor | |
-| Contact openEHR Finland to announce that there is a translation ready for formal review. | Local actor | Commit the archetype openEHR Finland's GitHub “draft branch” and contact openEHR Finland. |
+| Contact openEHR Finland to announce that there is a translation ready for formal review. | Local actor | Commit the archetype openEHR Finland's GitHub [draft repository](https://github.com/openehr-finland/openehr-finland) and contact openEHR Finland. |
 | Make decisions on the translation quality is sufficient for a formal review | OpenEHR Finland | Check out the translation and commit it to CKM. |
 
 **Formal review**
@@ -85,7 +85,7 @@ The openEHR templates are created in Finnish. The recommendation is that the arc
 
 ### Writing rules
 
-Translations of archetypes into Finnish shall follow national guidelines (mihin viitataan?).
+Translations of archetypes into Finnish shall follow national guidelines (TBD).
 Translations of terms in archetypes shall, as far as possible, follow the Finnish translation of terms in Snomed CT / ICD11 
  
 #### Supplementary writing rules and recommendations
