@@ -1,4 +1,4 @@
-# Implementation Guide template (ADD DIRECTIVE HERE MUST/NOT/SHOULD)
+# Implementation Guide template (ADD DIRECTIVE HERE MUST/NOT/SHOULD) (TRIAL)
 
 ## Status
 
@@ -10,15 +10,15 @@ Add text about status is TRIAL that if the implementation of the guide takes pla
 
 | Version | Date | Update | Responsible
 | --- | --- | --- | --- |
-| test | test | test | test |
-| test | test | test | test |
+|  |  |  |  |
+|  |  |  |  |
 
 ## Terminology
 
 | Term/Concept | Description | Source |
 | --- | --- | --- |
-| test | test | test |
-| test | test | test |
+|  |  |  |
+|  |  |  |
 
 ## Introduction
 
