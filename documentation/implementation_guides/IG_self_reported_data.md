@@ -1,8 +1,6 @@
 # The well-being information reported by the citizen/patient/customer himself (MUST) 
 
-## Status
-
-**TRIAL**
+> **STATUS:** TRIAL
 
 ## Version history
 
