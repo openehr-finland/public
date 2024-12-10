@@ -8,7 +8,8 @@
 | --- | --- | --- | --- |
 | 0.0.1 | 29.10.2024 | initial version | Henri Huttunen |
 | 0.0.2 | 7.11.2024 | added implementation overview | Riikka Lahtela |
-| 0.0.3 | 14.11.2024 | added most of the contents | Henri Huttunen |
+| 0.4.0 | 14.11.2024 | added most of the contents | Henri Huttunen |
+| 0.6.0 | 10.12.2024 | prepared guide for review | Henri Huttunen |
 
 ## Terminology
 
