@@ -50,10 +50,12 @@ The translation work primarily aims to ensure compatibility with the Finnish ope
 
 ### Standard process for translation work
 
+When openEHR Finland receives openEHR affiliate status at the beginning of 2025, a Jirasta board will be established to manage the archetype translation work. Board is used to track which archetypes have been identified as requiring translation, which translation work is in progress, and which are progressing to commenting and approval. More detailed instructions will be produced later.
+
 **Translation and internal review**
 | Task | Actor | Additional information |
 | --- | --- | --- |
-| Identify and investigate the local need for translation. | Local actor | |
+| Identify and investigate the local need for translation. | Local actor |  |
 | Check if there is a translation in CKM, openerEHR Finland Github repository or by asking openEHR Finland. | Local actor | User rights to CKM and GitHub are needed! |
 | Translate the archetype, or the archetypes from scratch or continue on the previous translation (if available). Follow guidelines described on this page. | Local actor | |
 | Review the translation in local group. | Local actor | |
