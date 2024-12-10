@@ -1,9 +1,7 @@
 # OpenEHR Finland implementation guides
 Under this section, openEHR Finland publishes all the implementation guides that are ready or under review.
 
-## Status
-
-**TRIAL**
+> **STATUS:** TRIAL
 
 ## Intro to implementation guides
 
