@@ -1,4 +1,4 @@
-# openEHR Finlandin dokumentaatio ja tukimateriaalit (TRIAL)
+# openEHR Finlandin dokumentaatio ja tukimateriaalit
 
 > **STATUS:** TRIAL
 
