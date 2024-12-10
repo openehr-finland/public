@@ -1,4 +1,6 @@
-# OpenEHR Finland's Manifest (STABLE)
+# OpenEHR Finland's Manifest
+
+> **STATUS:** STABLE
 
 The storage of customer and patient data in uniform and precise data models enables the use of data in a cost-effective manner while preserving the quality of the data. A precise data model refers to a level in social welfare and health care, which enables the field of information processing needs and takes into account the ways and situations in which information should be stored.
 
