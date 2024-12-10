@@ -1,8 +1,6 @@
 # Modelling language and localization (MUST)
 
-## Status
-
-**TRIAL**
+> **STATUS:** TRIAL
 
 ## Version history
 
