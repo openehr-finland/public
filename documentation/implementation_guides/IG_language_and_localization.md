@@ -79,7 +79,12 @@ Up-to-date contact information for contacting openEHR Finland can be found at ht
 	
 Informs HL7 Finland's technical committee about the completed translations. If necessary, the commenting and approval process according to the association's rules will be started.
 
-### Archetype development
+### Detailed descriptions
+
+Technical implementation instructions for the translation work
+- [Translate Archetypes using CKM](https://openehr.atlassian.net/wiki/spaces/healthmod/pages/2949125/Translate+Archetypes+Using+CKM) (in Finland option 2 is prefered and we use Archetype Designer)
+
+#### Archetype development
 
 The aim is always to use existing international archetypes as a basis for the modeling work. The archetypes are translated into Finnish as the modeling work progresses, utilizing the described translation process.
 All new archetypes are authored in English first and then translated into Finnish according to international practices.
@@ -90,16 +95,16 @@ Always try to use well-established and defined Finnish terms in translations, wh
 
 It should be noted that according to the recommendations of the international openEHR community, translation work should refrain from changing the original meaning and descriptions of the archetypes. However, somethimes the examples and recommendations in the original English descriptions of the archetypes can either be changed to reflect the Finnish operating environment or left out completely. If in the descriptions or other definitions of the original archetype, too specific levels are identified, which cause problems in the national localization work, these observations can be reported to the international community in the form of proposals for changes.
 
-### Templates
+#### Templates
 
 The openEHR templates are created in Finnish. The recommendation is that the archetypes needed for a template are localized and translated into Finnish in advance. The template is constructed after the translation process is completed.
 
-### Writing rules
+#### Writing rules
 
 Translations of archetypes into Finnish shall follow national guidelines (TBD).
 Translations of terms in archetypes shall, as far as possible, follow the Finnish translation of terms in Snomed CT / ICD11 
  
-#### Supplementary writing rules and recommendations
+##### Supplementary writing rules and recommendations
 
 **Abbreviations**
 Do not use English abbreviations, unless they are very well rooted in the Finnish medical vocabulary (formally, not in speech).
@@ -131,10 +136,5 @@ Follow the SNOMED Guidelines.
 **The term individual/person/patient**
 The situation determines which translation is most appropriate. Be consistent within a single archetype translation. Follow guidelines on national [vocabularies](https://sotesanastot.thl.fi/termed-publish-server/vocabulary/5deffdd9-14bf-4e5c-b1d7-b001cd52619e/concept/8a68003e-97eb-47ae-b314-f9e47ae7f9c3).
  
-### Detailed descriptions
-
-Technical implementation instructions for the translation work
-- [Translate Archetypes using CKM](https://openehr.atlassian.net/wiki/spaces/healthmod/pages/2949125/Translate+Archetypes+Using+CKM) (in Finland option 2 is prefered and we use Archetype Designer)
-
 ## Attachments
  
