@@ -92,6 +92,7 @@ All new archetypes are authored in English first and then translated into Finnis
 Always try to use well-established and defined Finnish terms in translations, which can be found in e.g. of the following services:
 - [National code server](https://koodistopalvelu.kanta.fi/codeserver/)
 - [National vocabulary service](https://sotesanastot.thl.fi/termed-publish-server/vocabularies)
+- Snomed CT and ICD10/11 translations
 
 It should be noted that according to the recommendations of the international openEHR community, translation work should refrain from changing the original meaning and descriptions of the archetypes. However, somethimes the examples and recommendations in the original English descriptions of the archetypes can either be changed to reflect the Finnish operating environment or left out completely. If in the descriptions or other definitions of the original archetype, too specific levels are identified, which cause problems in the national localization work, these observations can be reported to the international community in the form of proposals for changes.
 
@@ -100,11 +101,6 @@ It should be noted that according to the recommendations of the international op
 The openEHR templates are created in Finnish. The recommendation is that the archetypes needed for a template are localized and translated into Finnish in advance. The template is constructed after the translation process is completed.
 
 #### Writing rules
-
-Translations of archetypes into Finnish shall follow national guidelines (TBD).
-Translations of terms in archetypes shall, as far as possible, follow the Finnish translation of terms in Snomed CT / ICD11 
- 
-##### Supplementary writing rules and recommendations
 
 **Abbreviations**
 Do not use English abbreviations, unless they are very well rooted in the Finnish medical vocabulary (formally, not in speech).
