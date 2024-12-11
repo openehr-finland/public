@@ -47,7 +47,7 @@ Agreed practice in Finland on openEHR modeling and writing guidences.
 
 The goal of the openEHR translation work in Finland is to translate the archetypes so that they are localized to the Finnish operating environment, using international archetypes as widely as possible. In practice, this means that national legislation, recommendations, vocabularies and code lists must be taken into account in the implementation of the translation work. In addition, we always try to use well-established expressions used in clinical work.
 
-The translation work primarily aims to ensure compatibility with the Finnish operating environment by developing expressions of the original archetype or expanding the archetypes, if necessary. It should be noted that according to the recommendations of the international openEHR community, translation work should refrain from changing the original meaning and descriptions of the archetypes. However, somethimes the examples and recommendations in the original English descriptions of the archetypes can either be changed to reflect the Finnish operating environment or left out completely. If in the descriptions or other definitions of the original archetype, too specific levels are identified, which cause problems in the national localization work, these observations can be reported to the international community in the form of proposals for changes.
+The translation work primarily aims to ensure compatibility with the Finnish operating environment by developing expressions of the original archetype or expanding the archetypes, if necessary.
 
 ### Standard process for translation work
 
@@ -83,6 +83,12 @@ Informs HL7 Finland's technical committee about the completed translations. If n
 
 The aim is always to use existing international archetypes as a basis for the modeling work. The archetypes are translated into Finnish as the modeling work progresses, utilizing the described translation process.
 All new archetypes are authored in English first and then translated into Finnish according to international practices.
+
+Always try to use well-established and defined Finnish terms in translations, which can be found in e.g. of the following services:
+- [National code server](https://koodistopalvelu.kanta.fi/codeserver/)
+- [National vocabulary service](https://sotesanastot.thl.fi/termed-publish-server/vocabularies)
+
+It should be noted that according to the recommendations of the international openEHR community, translation work should refrain from changing the original meaning and descriptions of the archetypes. However, somethimes the examples and recommendations in the original English descriptions of the archetypes can either be changed to reflect the Finnish operating environment or left out completely. If in the descriptions or other definitions of the original archetype, too specific levels are identified, which cause problems in the national localization work, these observations can be reported to the international community in the form of proposals for changes.
 
 ### Templates
 
