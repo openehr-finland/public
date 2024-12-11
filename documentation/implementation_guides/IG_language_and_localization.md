@@ -51,7 +51,9 @@ The translation work primarily aims to ensure compatibility with the Finnish ope
 
 ### Standard process for translation work
 
-When openEHR Finland receives openEHR affiliate status at the beginning of 2025, a Jirasta board will be established to manage the archetype translation work. Board is used to track which archetypes have been identified as requiring translation, which translation work is in progress, and which are progressing to commenting and approval. More detailed instructions will be produced later.
+When openEHR Finland receives openEHR affiliate status at the beginning of 2025, a Jira board will be established to manage the archetype translation work. Board is used to track which archetypes have been identified as requiring translation, which translation work is in progress, and which are progressing to commenting and approval. More detailed instructions will be produced later.
+
+Up-to-date contact information for contacting openEHR Finland can be found at https://www.hl7.fi/openehr-alatyoryhma/.
 
 **Translation and internal review**
 | Task | Actor | Additional information |
