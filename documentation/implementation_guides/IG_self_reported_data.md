@@ -8,6 +8,7 @@
 | --- | --- | --- | --- |
 | 0.0.1 | 22.10.2024 | initial version | Henri Huttunen |
 | 0.0.2 | 23.10.2024 | Added examples | Riikka Lahtela |
+| 0.8.0 | 10.12.2024 | Prepared guide for commenting | Henri Huttunen |
 
 ## Terminology
 
