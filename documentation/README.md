@@ -17,7 +17,7 @@ OpenEHR Finlandin toiminnassa sovelletaan HL7 Finlandin määrittämiä hallinta
 | Vaihe | Kuvaus | Kesto |
 | --- | --- | --- |
 | Työstäminen | Mallinnus tai määrittelytyön toteutus | Tarpeen mukainen aika |
-| Kliininen validointi | Tuotos käydään läpi tarkoituksen mukaisten sote-ammattihenkilöiden kanssa, jotta tuotoksen kliininen pätevyys voidaan varmistaa | 1-2vko |
+| Kliininen validointi | Tuotos käydään läpi tarkoituksen mukaisten sote-ammattihenkilöiden kanssa, jotta tuotoksen kliininen pätevyys voidaan varmistaa | 1-4vko |
 | Kommentointi | Kommentointi / Lausuntokierroksen toteutus yhdistyksen sääntöjen mukaisesti | 4vko |
 | Standardiluonnoksen alustava äänestys | Ensimmäisen äänestyskierroksen toteutus yhdistyksen sääntöjen mukaisesti | 2vko |
 | Korjaustarpeista äänestäminen (tarvittaessa) | Edellisessä vaiheessa esiin tulleista korjaustarpeista sekä muutosehdotuksista äänestäminen yhdistyksen sääntöjen mukaisesti | 1vko |
