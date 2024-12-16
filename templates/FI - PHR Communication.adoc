@@ -1,0 +1,226 @@
+= Kommunikaatio
+
+
+== Metadata
+
+
+TemplateId:: FI - PHR Communication
+
+
+Root Archetype:: openEHR-EHR-COMPOSITION.self_reported_data.v1
+
+
+:toc:
+
+== RM Attribuutit
+
+*openEHR-EHR-COMPOSITION.self_reported_data.v* +
+composer = 'self'
+
+*openEHR-EHR-EVALUATION.communication_capability.v1* +
+provider = 'self'
+
+
+// Not supported rmType COMPOSITION
+
+== Kommunikaatiokyky
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Kommunikaatiokyky* + 
+EVALUATION: _openEHR-EHR-EVALUATION.communication_capability.v1_
+5+a|*Ensisijainen kieli* + 
+CLUSTER: _at0015_
+5+a|*Kieli* + 
+CLUSTER: _openEHR-EHR-CLUSTER.language.v1_
+|at0001| 1..1| DV_CODED_TEXT | Kielen nimi
+a|
+* afar (SFS-Kielikoodisto: AA)
+* abhaasi (SFS-Kielikoodisto: AB)
+* avesta (SFS-Kielikoodisto: AE)
+* afrikaans (SFS-Kielikoodisto: AF)
+* akan (SFS-Kielikoodisto: AK)
+* amhara (SFS-Kielikoodisto: AM)
+* arabia (SFS-Kielikoodisto: AR)
+* assami (SFS-Kielikoodisto: AS)
+* avaari (SFS-Kielikoodisto: AV)
+* aimara (SFS-Kielikoodisto: AY)
+* azeri,azerbaidžani (SFS-Kielikoodisto: AZ)
+* baškiiri (SFS-Kielikoodisto: BA)
+* valkovenäjä (SFS-Kielikoodisto: BE)
+* bulgaria (SFS-Kielikoodisto: BG)
+* bihari (SFS-Kielikoodisto: BH)
+* bislama (SFS-Kielikoodisto: BI)
+* bambara (SFS-Kielikoodisto: BM)
+* bengali (SFS-Kielikoodisto: BN)
+* tiibet (SFS-Kielikoodisto: BO)
+* bretoni (SFS-Kielikoodisto: BR)
+* bosnia (SFS-Kielikoodisto: BS)
+* katalaani (SFS-Kielikoodisto: CA)
+* tšetšeeni (SFS-Kielikoodisto: CE)
+* tšamorro (SFS-Kielikoodisto: CH)
+* korsika (SFS-Kielikoodisto: CO)
+* cree (SFS-Kielikoodisto: CR)
+* tšekki (SFS-Kielikoodisto: CS)
+* kirkkoslaavi (SFS-Kielikoodisto: CU)
+* tšuvassi (SFS-Kielikoodisto: CV)
+* kymri, wales (SFS-Kielikoodisto: CY)
+* tanska (SFS-Kielikoodisto: DA)
+* saksa (SFS-Kielikoodisto: DE)
+* divehi (SFS-Kielikoodisto: DV)
+* dzongkha,bhutani (SFS-Kielikoodisto: DZ)
+* ewe (SFS-Kielikoodisto: EE)
+* kreikka,uuskreikka (SFS-Kielikoodisto: EL)
+* englanti (SFS-Kielikoodisto: EN)
+* esperanto (SFS-Kielikoodisto: EO)
+* espanja (SFS-Kielikoodisto: ES)
+* viro, eesti (SFS-Kielikoodisto: ET)
+* baski,euskera,euskara (SFS-Kielikoodisto: EU)
+* farsi,persia (SFS-Kielikoodisto: FA)
+* fulfulde,fulani (SFS-Kielikoodisto: FF)
+* suomi (SFS-Kielikoodisto: FI)
+* fidži (SFS-Kielikoodisto: FJ)
+* fääri (SFS-Kielikoodisto: FO)
+* ranska (SFS-Kielikoodisto: FR)
+* friisi (SFS-Kielikoodisto: FY)
+* iiri (SFS-Kielikoodisto: GA)
+* gaeli (SFS-Kielikoodisto: GD)
+* galicia (SFS-Kielikoodisto: GL)
+* guarani (SFS-Kielikoodisto: GN)
+* gudžarati (SFS-Kielikoodisto: GU)
+* manksi (SFS-Kielikoodisto: GV)
+* hausa (SFS-Kielikoodisto: HA)
+* heprea (SFS-Kielikoodisto: HE)
+* hindi (SFS-Kielikoodisto: HI)
+* hiri-motu (SFS-Kielikoodisto: HO)
+* kroatia (SFS-Kielikoodisto: HR)
+* unkari (SFS-Kielikoodisto: HU)
+* armenia (SFS-Kielikoodisto: HY)
+* herero (SFS-Kielikoodisto: HZ)
+* interlingua (SFS-Kielikoodisto: IA)
+* indonesia,bahasa indonesia (SFS-Kielikoodisto: ID)
+* interlingue (SFS-Kielikoodisto: IE)
+* igbo,ibo (SFS-Kielikoodisto: IG)
+* inupiaq,inupiatun (SFS-Kielikoodisto: IK)
+* ido (SFS-Kielikoodisto: IO)
+* islanti (SFS-Kielikoodisto: IS)
+* italia (SFS-Kielikoodisto: IT)
+* inuktitut (SFS-Kielikoodisto: IU)
+* japani (SFS-Kielikoodisto: JA)
+* jaava (SFS-Kielikoodisto: JV)
+* georgia (SFS-Kielikoodisto: KA)
+* kongo,kikongo (SFS-Kielikoodisto: KG)
+* kikuju (SFS-Kielikoodisto: KI)
+* kwanjama,kuanjama (SFS-Kielikoodisto: KJ)
+* kazakki (SFS-Kielikoodisto: KK)
+* grönlanti,kalaallisut (SFS-Kielikoodisto: KL)
+* khmer,kambodža (SFS-Kielikoodisto: KM)
+* kannada (SFS-Kielikoodisto: KN)
+* korea (SFS-Kielikoodisto: KO)
+* kanuri (SFS-Kielikoodisto: KR)
+* kašmiri (SFS-Kielikoodisto: KS)
+* kurdi (SFS-Kielikoodisto: KU)
+* komi (SFS-Kielikoodisto: KV)
+* korni (SFS-Kielikoodisto: KW)
+* kirgiisi (SFS-Kielikoodisto: KY)
+* latina (SFS-Kielikoodisto: LA)
+* luxemburg,letzeburg (SFS-Kielikoodisto: LB)
+* ganda,luganda (SFS-Kielikoodisto: LG)
+* lingala (SFS-Kielikoodisto: LN)
+* lao (SFS-Kielikoodisto: LO)
+* liettua (SFS-Kielikoodisto: LT)
+* luba,katanganluba (SFS-Kielikoodisto: LU)
+* latvia (SFS-Kielikoodisto: LV)
+* malagasi,madagassi (SFS-Kielikoodisto: MG)
+* marshall (SFS-Kielikoodisto: MH)
+* maori (SFS-Kielikoodisto: MI)
+* makedonia (SFS-Kielikoodisto: MK)
+* malajalam (SFS-Kielikoodisto: ML)
+* mongoli (SFS-Kielikoodisto: MN)
+* moldavia (SFS-Kielikoodisto: MO)
+* marathi (SFS-Kielikoodisto: MR)
+* malaiji (SFS-Kielikoodisto: MS)
+* malta (SFS-Kielikoodisto: MT)
+* burma (SFS-Kielikoodisto: MY)
+* nauru (SFS-Kielikoodisto: NA)
+* norjan bokmål (SFS-Kielikoodisto: NB)
+* pohjoisndebele (SFS-Kielikoodisto: ND)
+* nepali (SFS-Kielikoodisto: NE)
+* ndonga (SFS-Kielikoodisto: NG)
+* hollanti (SFS-Kielikoodisto: NL)
+* norjan nynorsk (SFS-Kielikoodisto: NN)
+* norja (SFS-Kielikoodisto: NO)
+* eteländebele (SFS-Kielikoodisto: NR)
+* navajo (SFS-Kielikoodisto: NV)
+* njandža,tšitšewa,tšewa (SFS-Kielikoodisto: NY)
+* oksitaani (SFS-Kielikoodisto: OC)
+* odžibwa (SFS-Kielikoodisto: OJ)
+* oromo,afan oromo (SFS-Kielikoodisto: OM)
+* orija (SFS-Kielikoodisto: OR)
+* osseetti (SFS-Kielikoodisto: OS)
+* pandžab (SFS-Kielikoodisto: PA)
+* paali (SFS-Kielikoodisto: PI)
+* puola (SFS-Kielikoodisto: PL)
+* paštu, afgaani (SFS-Kielikoodisto: PS)
+* portugali (SFS-Kielikoodisto: PT)
+* ketšua (SFS-Kielikoodisto: QU)
+* retoromaani (SFS-Kielikoodisto: RM)
+* rundi,kirundi (SFS-Kielikoodisto: RN)
+* romania (SFS-Kielikoodisto: RO)
+* venäjä (SFS-Kielikoodisto: RU)
+* ruanda,kinjaruanda,njaruanda (SFS-Kielikoodisto: RW)
+* sanskrit (SFS-Kielikoodisto: SA)
+* sardi (SFS-Kielikoodisto: SC)
+* sindhi (SFS-Kielikoodisto: SD)
+* pohjoissaame (SFS-Kielikoodisto: SE)
+* sango (SFS-Kielikoodisto: SG)
+* serbokroatia,serbokroaatti (SFS-Kielikoodisto: SH)
+* singali,sinhala (SFS-Kielikoodisto: SI)
+* slovakki (SFS-Kielikoodisto: SK)
+* sloveeni (SFS-Kielikoodisto: SL)
+* samoa (SFS-Kielikoodisto: SM)
+* shona (SFS-Kielikoodisto: SN)
+* somali (SFS-Kielikoodisto: SO)
+* albania (SFS-Kielikoodisto: SQ)
+* serbia (SFS-Kielikoodisto: SR)
+* swazi,siswati (SFS-Kielikoodisto: SS)
+* sotho, eteläsotho (SFS-Kielikoodisto: ST)
+* sunda (SFS-Kielikoodisto: SU)
+* ruotsi (SFS-Kielikoodisto: SV)
+* swahili,suahili (SFS-Kielikoodisto: SW)
+* tamili (SFS-Kielikoodisto: TA)
+* telugu (SFS-Kielikoodisto: TE)
+* tadžikki (SFS-Kielikoodisto: TG)
+* thai (SFS-Kielikoodisto: TH)
+* tigrinja (SFS-Kielikoodisto: TI)
+* turkmeeni (SFS-Kielikoodisto: TK)
+* tagalog,pilipino (SFS-Kielikoodisto: TL)
+* tswana (SFS-Kielikoodisto: TN)
+* tongantonga (SFS-Kielikoodisto: TO)
+* turkki (SFS-Kielikoodisto: TR)
+* tsonga (SFS-Kielikoodisto: TS)
+* tataari (SFS-Kielikoodisto: TT)
+* twi (SFS-Kielikoodisto: TW)
+* tahiti (SFS-Kielikoodisto: TY)
+* uiguuri (SFS-Kielikoodisto: UG)
+* ukraina (SFS-Kielikoodisto: UK)
+* urdu (SFS-Kielikoodisto: UR)
+* uzbekki (SFS-Kielikoodisto: UZ)
+* valloni (SFS-Kielikoodisto: WA)
+* venda (SFS-Kielikoodisto: VE)
+* vietnam (SFS-Kielikoodisto: VI)
+* volapük (SFS-Kielikoodisto: VO)
+* wolof (SFS-Kielikoodisto: WO)
+* xhosa (SFS-Kielikoodisto: XH)
+* jiddiš,jiddi (SFS-Kielikoodisto: YI)
+* joruba (SFS-Kielikoodisto: YO)
+* zhuang (SFS-Kielikoodisto: ZA)
+* kiina (SFS-Kielikoodisto: ZH)
+* zulu (SFS-Kielikoodisto: ZU)
+
+
+Esimerkiksi: kiina, swahili, ranska tai norjalainen viittomakieli. Kielen koodaus terminologialla on suositeltavaa, mikäli mahdollista.
+|====
+// Not supported rmType CODE_PHRASE
+// Not supported rmType CODE_PHRASE
+// Not supported rmType PARTY_PROXY
