@@ -1,0 +1,297 @@
+= Fysiologiset mittaukset
+
+
+== Metadata
+
+
+TemplateId:: FI - PHR Physiological Measurements
+
+
+Root Archetype:: openEHR-EHR-COMPOSITION.self_reported_data.v1
+
+
+:toc:
+
+
+// Not supported rmType COMPOSITION
+
+== RM Attribuutit
+
+*openEHR-EHR-COMPOSITION.self_reported_data.v* +
+
+composer = 'self'
+
+
+
+*FHIR Vital Signs Base Profile Content* +
+
+Language = language +
+
+Narrative = feeder_audit/original_content +
+
+Unique identifier = feeder_audit/originating_system_item_ids +
+
+Subject of the observation = OBSERVATION/subject +
+
+Time for the observation = OBSERVATION/data/origin +
+
+Storing date = COMPOSITION/contribution/audit/commit_time
+
+Who is responsible for the observation = OBSERVATION/provider (= 'self') +
+
+Reference range = DV_QUANTITY/normal_range
+
+extension:CreatingApplication = feeder_audit
+
+
+== Verensokeri
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Verensokeri* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.laboratory_test_result.v1_
+|at0005| 1..1| DV_CODED_TEXT | Tutkimuksen nimi
+a|
+* Glucose [Moles/volume] in Blood (LOINC: 15074-8)
+* Glucose (mmol/l) in Capillary blood by Glucometer (LOINC: 14743-9)
+* Glucose (mmol/l) in Body fluid (LOINC: 14745-4)
+
+
+5+a|*Analyytin tulos* + 
+CLUSTER: _openEHR-EHR-CLUSTER.laboratory_test_analyte.v1_
+|at0024| 0..1| DV_CODED_TEXT | Analyytin nimi
+a|
+* Glucose [Moles/volume] in Blood (LOINC: 15074-8)
+* Glucose (mmol/l) in Capillary blood by Glucometer (LOINC: 14743-9)
+* Glucose (mmol/l) in Body fluid (LOINC: 14745-4)
+
+|at0001| 0..*| DV_QUANTITY | Analyytin tulos
+|
+
+|at0001| 0..*| DV_QUANTITY | Analyytin tulos
+|
+
+|at0003| 0..*| DV_TEXT | Kommentti
+a|
+5+a|*Terveystapahtuma* + 
+CLUSTER: _openEHR-EHR-CLUSTER.health_event.v0_
+
+|at0001| 1..1| DV_TEXT | Tapahtuman nimi
+a|
+|at0005| 0..1| DV_DURATION | Kulunut aika
+|
+|====
+== Verenpaine
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Verenpaine* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.blood_pressure.v2_
+
+
+|at0004| 0..1| DV_QUANTITY | Systolinen
+|
+
+
+|at0005| 0..1| DV_QUANTITY | Diastolinen
+|
+
+
+|at0033| 0..1| DV_TEXT | Kommentti
+a|
+|====
+== Pituus
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Pituus* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.height.v2_
+
+
+|at0004| 1..1| DV_QUANTITY | Pituus
+|
+
+
+|at0018| 0..1| DV_TEXT | Kommentti
+a|
+|====
+== Kehon lämpö
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Kehon lämpö* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.body_temperature.v2_
+|at0004| 1..1| DV_QUANTITY | Ruumiinlämpö
+|
+
+
+
+|at0063| 0..1| DV_TEXT | Kommentti
+a|
+|at0021| 0..1| DV_CODED_TEXT | Mittauskohta
+a|
+* at0025 -> Peräsuoli 
+* at0024 -> Kainalo 
+* at0023 -> Korvakäytävästä 
+* at0022 -> Suu 
+|====
+== Paino
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Paino* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.body_weight.v2_
+|at0004| 1..1| DV_QUANTITY | Paino
+|
+
+
+
+|at0024| 0..1| DV_TEXT | Kommentti
+a|
+|====
+== Pulssi/syke
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Pulssi/syke* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.pulse.v2_
+// Not supported rmType POINT_EVENT
+|at0004| 0..1| DV_QUANTITY | Taajuus
+|
+
+|at0005| 0..1| DV_CODED_TEXT | Säännöllinen?
+a|
+* at0006 -> Säännöllinen 
+* at1028 -> Epäsäännöllinen 
+|at1059| 0..1| DV_TEXT | Kommentti
+a|
+|undefined| 1..1| DV_DATE_TIME | Time
+|
+// Not supported rmType INTERVAL_EVENT
+|at0004| 0..1| DV_QUANTITY | Taajuus
+|
+
+
+
+|at0005| 0..1| DV_CODED_TEXT | Säännöllinen?
+a|
+* at0006 -> Säännöllinen 
+* at1028 -> Epäsäännöllinen 
+|at1059| 0..1| DV_TEXT | Kommentti
+a|
+|| 1..1| DV_CODED_TEXT | undefined
+// math_function -  /content[openEHR-EHR-OBSERVATION.pulse.v2]/data[at0002]/events[at0003,'Ajankohta (2)']/math_function
+a|
+* mean (openehr: 146)
+|| 1..1| DV_DURATION | undefined
+// width -  /content[openEHR-EHR-OBSERVATION.pulse.v2]/data[at0002]/events[at0003,'Ajankohta (2)']/width
+|
+|undefined| 1..1| DV_DATE_TIME | Time
+|
+// Not supported rmType INTERVAL_EVENT
+|at0004| 0..1| DV_QUANTITY | Taajuus
+|
+
+
+
+|at0005| 0..1| DV_CODED_TEXT | Säännöllinen?
+a|
+* at0006 -> Säännöllinen 
+* at1028 -> Epäsäännöllinen 
+|at1059| 0..1| DV_TEXT | Kommentti
+a|
+|| 1..1| DV_CODED_TEXT | undefined
+// math_function -  /content[openEHR-EHR-OBSERVATION.pulse.v2]/data[at0002]/events[at0003,'Ajankohta (3)']/math_function
+a|
+* minimum (openehr: 145)
+|| 0..1| DV_DURATION | undefined
+// width -  /content[openEHR-EHR-OBSERVATION.pulse.v2]/data[at0002]/events[at0003,'Ajankohta (3)']/width
+|
+|undefined| 1..1| DV_DATE_TIME | Time
+|
+// Not supported rmType INTERVAL_EVENT
+|| 1..1| DV_CODED_TEXT | undefined
+// math_function -  /content[openEHR-EHR-OBSERVATION.pulse.v2]/data[at0002]/events[at1036]/math_function
+a|
+* maximum (openehr: 144)
+|at0004| 0..1| DV_QUANTITY | Taajuus
+|
+|at0005| 0..1| DV_CODED_TEXT | Säännöllinen?
+a|
+* at0006 -> Säännöllinen 
+* at1028 -> Epäsäännöllinen 
+|at1059| 0..1| DV_TEXT | Kommentti
+a|
+|| 1..1| DV_DURATION | undefined
+// width -  /content[openEHR-EHR-OBSERVATION.pulse.v2]/data[at0002]/events[at1036]/width
+|
+|undefined| 1..1| DV_DATE_TIME | Time
+|
+|====
+== PEF
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*PEF* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.spirometry_result.v2_
+5+a|*PEFR* + 
+CLUSTER: _at0057_
+|at0058| 0..1| DV_QUANTITY | Mitattu tulos
+|
+|at0101| 0..1| DV_TEXT | Kommentti
+a|
+|at0098| 0..1| DV_TEXT | Sekoittavat tekijät
+a|
+
+|====
+== Oire / tuntemus seulontakysely
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Oire / tuntemus seulontakysely* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.symptom_sign_screening.v1_
+
+|at0034| 0..1| DV_TEXT | Kyselyn tarkoitus
+a|
+* PEF active symptoms
+
+// Not supported rmType ELEMENT
+|| 0..1| DV_CODED_TEXT | undefined
+// coded_text_value -  /content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/data[at0001]/events[at0002,'Ajankohta']/data[at0003]/items[at0028]/value
+a|
+* at0031 -> Kyllä 
+* at0032 -> Ei 
+
+|
+|====
+== Hengitys
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Hengitys* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.respiration.v2_
+|at0004| 0..1| DV_QUANTITY | Hengitysfrekvenssi
+|
+
+
+
+|at0070| 0..1| DV_TEXT | Kommentti
+a|
+|====
+== Vyötärönympärys
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Vyötärönympärys* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.waist_circumference.v1_
+|at0004| 1..1| DV_QUANTITY | Vyötärönympärys
+|
+
+
+
+|at0007| 0..1| DV_TEXT | Kommentti
+a|
+|====
+// Not supported rmType CODE_PHRASE
+// Not supported rmType CODE_PHRASE
+// Not supported rmType PARTY_PROXY
