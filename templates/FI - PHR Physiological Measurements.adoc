@@ -41,7 +41,7 @@ Who is responsible for the observation = OBSERVATION/provider (= 'self') +
 
 Reference range = DV_QUANTITY/normal_range
 
-extension:CreatingApplication = feeder_audit
+extension:CreatingApplication = feeder_audit/originating_system_audit
 
 
 == Verensokeri
