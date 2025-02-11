@@ -61,7 +61,7 @@ In addition, the value “self” is filled in Rm Attributes:
 2) Communication Capability: ENTRY.provider > menu: Rm Attributes composer > field: provider (PARTY_PROXY)
 ![kuva](https://github.com/openehr-finland/public/blob/main/documentation/implementation_guides/pics/Self_Provider.png)
 
-Technical version of the example: https://github.com/openehr-finland/openehr-finland/blob/b019cc8497d231c20e6e093b39914f37ebe1e196/local/Communication.t.json
+Technical version of the example: https://github.com/openehr-finland/public/blob/main/documentation/implementation_guides/pics/Communication.t.json
 
 ### Detailed descriptions
 
