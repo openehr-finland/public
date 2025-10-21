@@ -37,16 +37,16 @@ Attachments that should be part of the published implementation guide are last p
 
 ## Management of associated models
 
-Models (archetypes and templates) created with the development of an implementation guide should be handled in accordance with seperate guides (TBD). Therefore, the work will take place in separate projects at first. When the work is to be sent for review, a release containing the models should be included. When the work is considered ready and ready to be published (in accordance with the rules specified in the chapter hereinafter referred to as “Review and publification process”).
+Models (archetypes and templates) created with the development of an implementation guide should be handled in accordance with seperate guides (TBD). Therefore, the work will take place in separate projects at first. When the work is to be sent for review, a release containing the models should be included. When the work is considered ready and ready to be published (in accordance with the rules specified in the chapter hereinafter referred to as “Review and publication process”).
 
 ## Translation
 
 All implementation guides are written in English to make them more accessible. Finnish translations of the implementation guides can be added as subpages to the English versions.
 
-## Review and publification process
+## Review and publication process
 
-When the implementation guide is considered ready to be reviewed, a request for comments and official approval process must be implemented as described on page [https://github.com/openehr-finland/public/documentation/](https://github.com/openehr-finland/public/blob/main/documentation/README.md).
+When the implementation guide is considered ready for review, a request for comments and official approval process must be implemented as described on page [https://github.com/openehr-finland/public/documentation/](https://github.com/openehr-finland/public/blob/main/documentation/README.md).
 
-When the implementation guide is considered to be revised and completed, this should be lifted to openEHR Finland as an organization by taking this up at an administrative meeting. There, the guide must be approved as final before publication before the publication itself. This also applies to when the guide should go from Trial to Stable.
+Once the implementation guide is considered to be fully revised and completed, it should be presented to openEHR Finland as an organization by bringing it up at an administrative meeting. There, the guide must be approved as final before its official publication. This also applies to when the guide should go from TRIAL to STABLE status.
 
-Publication is then on the Github page. Status is changed to the STABLE. Then the news of publication will be spread via openEHR Finland's mailing list and contact other needed stakeholders about the publication.
+The implementation guide is then published on the GitHub page and its status is changed to STABLE. The news of the publication will be disseminated via openEHR Finland's mailing list and communicated also to other relevant stakeholders.
