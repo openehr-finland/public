@@ -1,0 +1,326 @@
+= Fysiologiset mittaukset
+
+
+== Metadata
+
+
+TemplateId:: FI - PHR Physiological Measurements
+
+
+Archetype:: openEHR-EHR-COMPOSITION.self_reported_data.v1
+
+
+
+
+:toc:
+
+
+
+
+// Not supported rmType COMPOSITION
+== EVENT_CONTEXT
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*EVENT_CONTEXT* + 
+EVENT_CONTEXT: __
+|====
+== Verensokeri
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Verensokeri* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.laboratory_test_result.v1_
+|at0005| 1..1| DV_CODED_TEXT | Tutkimuksen nimi
+a|
+* Glucose [Moles/volume] in Blood (LOINC: 15074-8)
+* Glucose (mmol/l) in Capillary blood by Glucometer (LOINC: 14743-9)
+* Glucose (mmol/l) in Body fluid (LOINC: 14745-4)
+
+
+*A test result may be for a single analyte, or a group of items, including panel tests. It is strongly recommended that 'Test name' be coded with a terminology, for example LOINC or SNOMED CT. For example: 'Glucose', 'Urea and Electrolytes', 'Swab', 'Cortisol (am)', 'Potassium in perspiration' or 'Melanoma histopathology'. The name may sometimes include specimen type and patient state, for example 'Fasting blood glucose' or include other information, as 'Potassium (PNA blood gas)'.(en)
+5+a|*Analyytin tulos* + 
+CLUSTER: _openEHR-EHR-CLUSTER.laboratory_test_analyte.v1_
+|at0024| 0..1| DV_CODED_TEXT | Analyytin nimi
+a|
+* Glucose [Moles/volume] in Blood (LOINC: 15074-8)
+* Glucose (mmol/l) in Capillary blood by Glucometer (LOINC: 14743-9)
+* Glucose (mmol/l) in Body fluid (LOINC: 14745-4)
+
+
+*The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies. (en)
+|at0001| 0..*| DV_QUANTITY | Analyytin tulos
+|
+
+
+*For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details. (en)
+|at0001| 0..*| DV_QUANTITY | Analyytin tulos (vaihtoehtoinen)
+|
+
+
+*For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details. (en)
+|at0003| 0..*| DV_TEXT | Kommentti
+a|
+5+a|*Terveystapahtuma* + 
+CLUSTER: _openEHR-EHR-CLUSTER.health_event.v0_
+
+
+*For example: a poisoning, overdose or trauma. (en)
+|at0001| 1..1| DV_TEXT | Tapahtuman nimi
+a|
+|at0005| 0..1| DV_DURATION | Kulunut aika
+|
+|====
+== Verenpaine
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Verenpaine* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.blood_pressure.v2_
+
+
+Yleisimmin termi "verenpaine" viittaa brakiaalisen olkavarren arteriapaineeseen.
+// Not supported rmType POINT_EVENT
+|at0004| 0..1| DV_QUANTITY | Systolinen
+|
+
+
+
+|at0005| 0..1| DV_QUANTITY | Diastolinen
+|
+
+
+
+|at0033| 0..1| DV_TEXT | Kommentti
+a|
+|undefined| 1..1| DV_DATE_TIME | Time
+|
+// Not supported rmType INTERVAL_EVENT
+|at0004| 0..1| DV_QUANTITY | Systolinen
+|
+
+
+
+|at0005| 0..1| DV_QUANTITY | Diastolinen
+|
+
+
+
+|at0033| 0..1| DV_TEXT | Kommentti
+a|
+|| 1..1| DV_CODED_TEXT | undefined
+// math_function -  /content[openEHR-EHR-OBSERVATION.blood_pressure.v2]/data[at0001]/events[at0006,'Keskiarvo']/math_function
+a|
+* mean (openehr: 146)
+|undefined| 1..1| DV_DURATION | Width
+|
+|undefined| 1..1| DV_DATE_TIME | Time
+|
+|====
+== Pituus
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Pituus* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.height.v2_
+
+
+Height is measured with the individual in a standing position and body length in a recumbent position.
+|at0004| 1..1| DV_QUANTITY | Pituus
+|
+
+
+
+|at0018| 0..1| DV_TEXT | Kommentti
+a|
+|====
+== Kehon lämpö
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Kehon lämpö* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.body_temperature.v2_
+|at0004| 1..1| DV_QUANTITY | Kehon lämpö
+|
+
+
+
+|at0063| 0..1| DV_TEXT | Kommentti
+a|
+|at0021| 0..1| DV_CODED_TEXT | Mittauskohta
+a|
+* at0025 -> Peräsuoli 
+* at0024 -> Kainalo 
+* at0023 -> Korvakäytävästä 
+* at0022 -> Suu 
+|====
+== Paino
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Paino* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.body_weight.v2_
+|at0004| 1..1| DV_QUANTITY | Paino
+|
+
+
+
+|at0024| 0..1| DV_TEXT | Kommentti
+a|
+|====
+== Pulssi/syke
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Pulssi/syke* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.pulse.v2_
+// Not supported rmType POINT_EVENT
+|at0004| 0..1| DV_QUANTITY | Taajuus
+|
+
+
+
+|at0005| 0..1| DV_CODED_TEXT | Säännöllinen?
+a|
+* at0006 -> Säännöllinen 
+* at1028 -> Epäsäännöllinen 
+|at1059| 0..1| DV_TEXT | Kommentti
+a|
+|undefined| 1..1| DV_DATE_TIME | Time
+|
+// Not supported rmType INTERVAL_EVENT
+|at0004| 0..1| DV_QUANTITY | Taajuus
+|
+
+
+
+|at0005| 0..1| DV_CODED_TEXT | Säännöllinen?
+a|
+* at0006 -> Säännöllinen 
+* at1028 -> Epäsäännöllinen 
+|at1059| 0..1| DV_TEXT | Kommentti
+a|
+|| 1..1| DV_CODED_TEXT | undefined
+// math_function -  /content[openEHR-EHR-OBSERVATION.pulse.v2]/data[at0002]/events[at0003,'24h keskiarvo']/math_function
+a|
+* mean (openehr: 146)
+|| 0..1| DV_DURATION | undefined
+// width -  /content[openEHR-EHR-OBSERVATION.pulse.v2]/data[at0002]/events[at0003,'24h keskiarvo']/width
+|
+|undefined| 1..1| DV_DATE_TIME | Time
+|
+// Not supported rmType INTERVAL_EVENT
+|at0004| 0..1| DV_QUANTITY | Taajuus
+|
+
+
+
+|at0005| 0..1| DV_CODED_TEXT | Säännöllinen?
+a|
+* at0006 -> Säännöllinen 
+* at1028 -> Epäsäännöllinen 
+|at1059| 0..1| DV_TEXT | Kommentti
+a|
+|| 1..1| DV_CODED_TEXT | undefined
+// math_function -  /content[openEHR-EHR-OBSERVATION.pulse.v2]/data[at0002]/events[at0003,'24h matalin arvo']/math_function
+a|
+* minimum (openehr: 145)
+|| 0..1| DV_DURATION | undefined
+// width -  /content[openEHR-EHR-OBSERVATION.pulse.v2]/data[at0002]/events[at0003,'24h matalin arvo']/width
+|
+|undefined| 1..1| DV_DATE_TIME | Time
+|
+// Not supported rmType INTERVAL_EVENT
+|| 1..1| DV_CODED_TEXT | undefined
+// math_function -  /content[openEHR-EHR-OBSERVATION.pulse.v2]/data[at0002]/events[at1036,'24h korkein arvo']/math_function
+a|
+* maximum (openehr: 144)
+|at0004| 0..1| DV_QUANTITY | Taajuus
+|
+
+
+
+|at0005| 0..1| DV_CODED_TEXT | Säännöllinen?
+a|
+* at0006 -> Säännöllinen 
+* at1028 -> Epäsäännöllinen 
+|at1059| 0..1| DV_TEXT | Kommentti
+a|
+|| 1..1| DV_DURATION | undefined
+// width -  /content[openEHR-EHR-OBSERVATION.pulse.v2]/data[at0002]/events[at1036,'24h korkein arvo']/width
+|
+|undefined| 1..1| DV_DATE_TIME | Time
+|
+|====
+== PEF
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*PEF* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.spirometry_result.v2_
+5+a|*PEFR* + 
+CLUSTER: _at0057_
+|at0058| 0..1| DV_QUANTITY | Mitattu tulos
+|
+|at0101| 0..1| DV_TEXT | Kommentti
+a|
+|at0098| 0..1| DV_TEXT | Sekoittavat tekijät
+a|
+
+
+*For example: known COPD. (en)
+|====
+== Oire / tuntemus seulontakysely
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Oire / tuntemus seulontakysely* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.symptom_sign_screening.v1_
+
+
+*The answers may be self-reported. (en)
+|at0034| 0..1| DV_TEXT | Kyselyn tarkoitus
+a|
+* PEF active symptoms
+
+
+*For example: pre-admission screening or the name of the actual questionnaire. (en)
+|at0028| 0..*| DV_CODED_TEXT | Aktiivisia oireita?
+a|
+* at0031 -> *Yes (en) 
+* at0032 -> *No (en) 
+
+
+*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)
+|====
+== Hengitys
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Hengitys* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.respiration.v2_
+|at0004| 0..1| DV_QUANTITY | Hengitysfrekvenssi
+|
+
+
+
+|at0070| 0..1| DV_TEXT | Kommentti
+a|
+|====
+== Vyötärönympärys
+[options="header", cols="3,3,5,5,30"]
+|====
+|NodeId|Attr.|RM Type| Name |Description
+5+a|*Vyötärönympärys* + 
+OBSERVATION: _openEHR-EHR-OBSERVATION.waist_circumference.v1_
+|at0004| 1..1| DV_QUANTITY | Vyötärönympärys
+|
+
+
+
+|at0007| 0..1| DV_TEXT | Kommentti
+a|
+|====
+// Not supported rmType CODE_PHRASE
+// Not supported rmType CODE_PHRASE
+// Not supported rmType PARTY_PROXY
