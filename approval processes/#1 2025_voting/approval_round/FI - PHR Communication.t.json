@@ -1,0 +1,1730 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "8a39ce2b-f899-4bdb-a252-87e6f929852c",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2024-10-18"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "3.0.0",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "e338674e781b2bc70fe8a5dfa59315e5",
+      "PARENT:MD5-CAM-1.0.1" : "B90C9995DE7CA7BCA27AAC9A42E00280"
+    },
+    "details" : {
+      "nn" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nn"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fr" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fr"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fi" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fi"
+        },
+        "keywords" : [ ],
+        "copyright" : "© openEHR Foundation",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "zh-cn" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh-cn"
+        },
+        "purpose" : "针对个人所提供信息的容器，用于支持将患者产生型健康数据（patient generated health data，PGHD）与临床医务人员/临床医生产生型健康数据（clinician-generated health data，CGHD）明确地区分/分离开来。",
+        "keywords" : [ "问卷, 调查问卷, 自行报告, 自我报告, 表单, 表格, 调查, PROM, 患者报告型结局指标, 患者报告型效果指标, PREM, 患者报告型体验指标, PRO, 患者报告型效果, 日记, 日志" ],
+        "use" : "作为通用的容器，用来记录个人所提供的信息，以支持将患者产生型健康数据与临床医务人员/临床医生产生型健康数据明确地区分/分离开来。\r\n\r\n本原始型的内容范围可能非常广泛，并且可以包容很多的上下文背景/语境。预期的内容范围包括但不仅限于：\r\n- 自行生成的对于问卷的回答，包括 PREM（Patient-Reported Experience Measure，患者报告型体验指标） 或 PROM（Patient‐Reported Outcome Measure，患者报告型结局/效果指标）\r\n- 疼痛或情绪日记\r\n- 吸烟日记\r\n- 自行生成的健康摘要，用于与他人共享\r\n- 对于种种观测项目和观察项目的自行监控/监测\r\n\r\n本原始型的预期用途包括但不仅限于：\r\n- 在已经计划的联系/接触之前，向临床医务人员/临床医生提交自行报告的问卷\r\n- 提交联系申请表\r\n- 个人健康档案（Personal Health Record，PHR）之中的日常观测结果\r\n- 患者在共享型临床门户当中所输入的数据\r\n- 患者生成的赋予来自个人或医疗设备的信息的记录\r\n\r\n在此故意对其总的章节/内容（Sections/Content）构成要素不加约束。这样，在模板当中，就可以利用任何适合相应临床目的的章节型（SECTION）或条目型（ENTRY）原始型来对其加以填充。",
+        "misuse" : "并非旨在用于表达临床医务人员/临床医生产生型的记录。",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.self_reported_data.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_self_reported_data.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "1..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.2",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-communication_capability-001.v1",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ],
+    "attributeCustomizations" : {
+      "composer" : {
+        "aliases" : {
+          "en" : "self",
+          "fi" : "self"
+        }
+      }
+    }
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Communication",
+          "description" : "Generic container for information provided by an individual."
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Communication",
+          "description" : "Generisk container for informasjon gitt av et individ."
+        }
+      },
+      "nn" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Communication",
+          "description" : "*Generic container for information provided by an individual. (en)"
+        }
+      },
+      "sv" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Communication",
+          "description" : "Generell behållare för information som tillhandahålls av en individ."
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Communication",
+          "description" : "Generischer Container für Informationen, die von einer Person bereitgestellt werden."
+        }
+      },
+      "fr" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Communication",
+          "description" : "Conteneur générique pour des informations fournies par un individu."
+        }
+      },
+      "pt" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Communication",
+          "description" : "Contentor genérico para informação fornecida por um indivíduo."
+        }
+      },
+      "fi" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Kommunikaatio",
+          "description" : "Geneerinen säiliö henkilön itse ilmoittamille tiedoille."
+        }
+      },
+      "zh-cn" : { }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "cb4a8c15-317d-36da-a0e2-b8b17a32f0f0",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "FI - PHR Communication",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "90ee0021-52c2-4fd5-89d5-29b71470ddb2",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "CF29166BE9F2CB4B2683734602039F20"
+      },
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om individets praktiske evne til å kommunisere, inkludert funksjonsnedsettelser og behov for kommunikasjonshjelpemidler.",
+          "keywords" : [ "språk", "tolk", "oversettelse", "oversetter", "kommunikasjon", "informasjonsutveksling", "formidle", "videreformidle", "tilpasset kommunikasjon", "tilrettelagt kommunikasjon", "samtale", "translatør", "språkassistent", "ytring", "verbal", "nonverbal", "dialog" ],
+          "use" : "Brukes for å registrere detaljer om individets praktiske evne til å kommunisere, inkludert funksjonsnedsettelser og behov for kommunikasjonshjelpemidler.\r\n\r\nHensikten med arketypen er å registrere hvordan individet kommuniserer med andre og hvordan klinikere best kan kommunisere med individet.",
+          "misuse" : "Brukes ikke for å registrere detaljer om et språk, bruk arketypen CLUSTER.language (Språk) for dette formålet.\r\n\r\nBrukes ikke for å registrere detaljer om en forespørsel om tolketjenester. Bruk arketypen CLUSTER.interpreter_requirements (Tolkebehov) i en egnet INSTRUCTION-arketype, for eksempel INSTRUCTION.service_request (Helsetjenesteforespørsel).\r\n\r\nBrukes ikke for å registrere detaljer om tolking som er gjennomført. Bruk arketypen ACTION.interpretation for dette formålet.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about the practical ability of an individual to communicate, including impairments and need for communication aids.",
+          "keywords" : [ "language", "interpreter", "translation", "translater", "translator" ],
+          "use" : "Use to record details about the practical ability of an individual to communicate, including impairments and need for communication aids.\r\n\r\nThis archetype is intended to capture how an individual communicates with others and how healthcare providers can best communicate with an individual.",
+          "misuse" : "Not to be used to record details about a language - use CLUSTER.language for this purpose.\r\n\r\nNot to be used to record details about a request for interpreter services - use CLUSTER.Interpreter_requirements with a suitable INSTRUCTION archetype, for example INSTRUCTION.service_request.\r\n\r\nNot to be used to record details about an interpretation that was performed - use the proposed ACTION.interpretation.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fi" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fi"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera detaljer om en individs praktiska förmåga att kommunicera, inklusive försämringar och behov av kommunikationshjälpmedel.",
+          "keywords" : [ "språk", "tolk", "översättning", "översättare", "translator", "kommunicera" ],
+          "use" : "Används för att registrera detaljer om en individs praktiska förmåga att kommunicera, inklusive försämringar och behov av kommunikationshjälpmedel.\r\n\r\nDenna arketyp är avsedd att uppfånga hur en individ kommunicerar med andra och hur vårdgivare bäst kan kommunicera med en individ.",
+          "misuse" : "*Not to be used to record details about a language - use CLUSTER.language for this purpose.\r\n\r\nNot to be used to record details about a request for interpreter services - use CLUSTER.Interpreter_request with a suitable INSTRUCTION archetype, for example INSTRUCTION.service_request.\r\n\r\nNot to be used to record details about an interpretation that was performed - use the proposed ACTION.interpretation. (en)",
+          "copyright" : "*© openEHR Foundation, openEHR Norway (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar detalles sobre la capacidad práctica de una persona para comunicarse, incluidas las deficiencias y la necesidad de apoyo a la comunicación.",
+          "keywords" : [ "idioma", "intérprete", "traducción", "traductor" ],
+          "use" : "Se utiliza para registrar detalles sobre la capacidad práctica de una persona para comunicarse, incluidas las deficiencias y la necesidad de apoyo a la comunicación.\r\n\r\nEste arquetipo pretende captar cómo se comunica un individuo con los demás y cómo pueden comunicarse mejor con él los profesionales sanitarios.",
+          "misuse" : "*Not to be used to record details about a language - use CLUSTER.language for this purpose.\r\n\r\nNot to be used to record details about a request for interpreter services - use CLUSTER.Interpreter_request with a suitable INSTRUCTION archetype, for example INSTRUCTION.service_request.\r\n\r\nNot to be used to record details about an interpretation that was performed - use the proposed ACTION.interpretation. (en)",
+          "copyright" : "*© openEHR Foundation, openEHR Norway (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.communication_capability.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-communication_capability-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0002.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0015.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.4" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0021.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_ARCHETYPE_ROOT",
+                  "rmTypeName" : "CLUSTER",
+                  "occurrences" : "1..1",
+                  "nodeId" : "at0003.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ],
+                  "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-language-001.v1",
+                  "referenceType" : "archetypeOverlay"
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0022.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0009.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0011",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ],
+      "attributeCustomizations" : {
+        "provider" : {
+          "aliases" : {
+            "en" : "self",
+            "fi" : "self"
+          }
+        }
+      }
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0015.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0015.1",
+            "text" : "Preferred language",
+            "description" : "Preferred language and/or method of communication for an individual."
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
+            "description" : ""
+          }
+        },
+        "nb" : {
+          "at0015.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0015.1",
+            "text" : "Foretrukket språk",
+            "description" : "Individets foretrukne språk og kommunikasjonsmetode."
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          }
+        },
+        "fi" : {
+          "at0015.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0015.1",
+            "text" : "*Preferred language (en)",
+            "description" : "*Preferred language and/or method of communication for an individual. (en)"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          }
+        },
+        "sv" : {
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
+            "description" : ""
+          }
+        },
+        "es" : {
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0019" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0019" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0019" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0019" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "ed2bc015-0aae-4ec0-95ab-a0ed7404a697",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "John Tore Valand",
+        "organisation" : "Helse Bergen HF, Norway",
+        "email" : "john.tore.valand@helse-bergen.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fi"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Emma Malm",
+        "organisation" : "Karolinska Universitetssjukhuset",
+        "email" : "emma.malm@cambio.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "b90ecd59-d53f-456c-ad8d-485a841b497f",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "B5CF5479A55C28873A783CCC47AE047C"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung von Details über ein mündliches, schriftliches oder symbolisches Mitteilungsverfahren.",
+          "keywords" : [ "Unterzeichnung", "Zeichensprache", "Sprache", "Signatur", "Lautsprecher", "mündlich", "schriftlich", "Kompetenz", "Sprechen", "Übersetzen", "interpretieren" ],
+          "use" : "Der Archetyp wird verwendet, um Details über ein mündliches, schriftliches oder symbolisches Mitteilungsverfahren darzustellenn. Der Kontext der Angaben zur Sprache wird durch die übergeordneten Archetypen bereitgestellt, in denen dieser Archetyp verschachtelt ist. Zum Beispiel:\r\n- um die primäre oder bevorzugte Sprache eines Patienten zu erfassen, verwenden Sie diesen Archetyp im Kontext von CLUSTER.communication;\r\n- um die bevorzugte oder erforderliche Sprache als Teil einer Dolmetscheranfrage zu erfassen, verwenden Sie CLUSTER.interpreter_requirements;\r\n- um die von einem Dolmetscher im Rahmen einer klinischen Konsultation verwendete Sprache darzustellen, verwenden Sie diesen Archetyp innerhalb von ACTION.interpretation.\r\n\r\nVerwenden Sie eine separate Instanz dieses Archetyps, um jede Sprache darzustellen, wenn mehrere Sprachen darzustellen werden müssen, z. B. Norwegisch und Suaheli.",
+          "misuse" : "Der Archetyp darf nicht zur Darstellung von Fähigkeiten und Mitteln zum Austausch von Informationen mit einer Einzelperson verwendet werden – verwenden Sie CLUSTER.communication für diesen Zweck.\r\n\r\nDarf nicht verwendet werden, um Details zu einer Anfrage für Dolmetscherdienste darzustellen – verwenden Sie CLUSTER.interpreter_requirements mit einem geeigneten INSTRUCTION-Archetyp, zum Beispiel INSTRUCTION.service_request.\r\n\r\nDarf nicht verwendet werden, um Details zu einer durchgeführten Interpretation darzustellen – verwenden Sie die vorgeschlagene ACTION.interpretation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om muntlig (tale, tegnspråk) eller skriftlig kommunikasjon.",
+          "keywords" : [ "tegn", "tegnspråk", "tale", "morsmål", "språk", "språkbruk", "dialekt", "taktil", "blindeskrift", "skrift", "målføre", "målform", "skriftspråk", "skriftlig" ],
+          "use" : "For å registrere detaljer om muntlig (tale, tegnspråk) eller skriftlig kommunikasjon. Den overordnede arketypen som denne arketypen nøstes i bestemmer konteksten for registreringen av språket. For eksempel:\r\n- For å registrere et individs primære eller foretrukne språk, bruk denne arketypen i arketypen CLUSTER.communication (Kommunikasjon).\r\n- For å registrere foretrukket eller påkrevd språk som en del av en forespørsel om tolk, bruk denne arketypen i arketypen CLUSTER.interpreter_requirements (Tolkebehov).\r\n- For å registrere språket som ble benyttet av en tolk under en klinisk konsultasjon, bruk denne arketypen i arketypen ACTION.interpretation.\r\n\r\nDersom det er behov for å registrere flere språk - for eksempel norsk og swahili, må arketypen gjentas for hvert språk.",
+          "misuse" : "Brukes ikke for å registrere evne og metoder for utveksling av informasjon med et individ. Bruk arketypen CLUSTER.communication (Kommunikasjon) for dette formålet.\r\n\r\nBrukes ikke for å registrere en forespørsel om tolketjenester. Bruk arketypen CLUSTER.interpreter_requirements (Tolkebehov) sammen med en passende INSTRUCTION-arketype, for eksempel INSTRUCTION.service_request (Helsetjenesteforespørsel).\r\n\r\nBrukes ikke for å registrere detaljer om en tolking som er gjennomført. Bruk arketypen ACTION.interpretation for dette formålet.",
+          "copyright" : "© Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about a spoken, written or symbolic system of communication.",
+          "keywords" : [ "signing", "sign language", "tongue", "sign", "speaker", "spoken", "written", "proficiency", "speech", "translate", "interpret" ],
+          "use" : "Use to record details about a spoken, written or symbolic system of communication. The context of the language details is provided by the parent archetypes within which this archetype is nested. For example:\r\n- to record a patient's primary or preferred language, use this archetype within the context of CLUSTER.communication;\r\n- to record the preferred or required language as part of a request for an interpreter, use CLUSTER.interpreter_requirements;\r\n- to record the language used by an interpreter within the context of a clinical consultation, use this archetype within ACTION.interpretation.\r\n\r\nUse a separate instance of this archetype to record each language in the situation where multiple languages need to be recorded, for example Norwegian and Swahili.",
+          "misuse" : "Not to be used to record capability and means for exchanging information with an individual - use CLUSTER.communication for this purpose.\r\n\r\nNot to be used to record details about a request for interpreter services - use CLUSTER.Interpreter_requirements with a suitable INSTRUCTION archetype, for example INSTRUCTION.service_request.\r\n\r\nNot to be used to record details about an interpretation that was performed - use the proposed ACTION.interpretation.",
+          "copyright" : "© Nasjonal IKT HF, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "用于记录关于口头类、书面类或符号类（手势语类；手语类）沟通交流体系的详情。",
+          "keywords" : [ "手势语", "使用手势语", "打手势语", "手语", "使用手语", "打手语", "符号语言", "使用符号语言", "说话方式", "语言", "手势", "符号", "说话者", "口语", "口头", "口头语", "口头语言", "书面", "书面语", "书面语言", "精通", "熟练程度", "精通程度", "讲话", "说话能力", "言语", "翻译", "书面翻译", "口头翻译", "口译" ],
+          "use" : "用于记录关于口头类、书面类或符号类（手势语类；手语类）沟通交流体系的详情。语言详情的语境由其中嵌套此原始型的父原始型提供。 例如：\r\n - 用于记录患者的主要语言（第一语言；母语）或首选语言，且应当在沟通交流簇群CLUSTER.communication的语境下使用此原始型；\r\n - 用于将首选语言或所要求的语言作为关于口译工作者（口译员；口译译员； 传译员）的请求（申请）的组成部分加以记录，且应当采用口译工作者需求簇群CLUSTER.interpreter_requirements；\r\n - 用于在临床就诊/咨询/会诊的语境下记录口译工作者所使用的语言，且应当在口译行动ACTION.interpretation当中使用此原始型。\r\n\r\n在需要记录多种语言的情况下，应当采用此原始型的单独实例来分别记录每种语言，如挪威语和斯瓦希里语。",
+          "misuse" : "不得用于记录与个人交换信息的能力和手段/方法；对于此种目的，则请采用沟通交流簇群CLUSTER.communication。\r\n\r\n不用于记录关于口译工作者服务请求（申请）的详情；对于此种目的，则请采用具有合适的指令原始型INSTRUCTION的口译工作者需求簇群CLUSTER.Interpreter_requirements，如服务请求（服务申请；服务项目请求）指令原始型INSTRUCTION.service_request。\r\n\r\n不得用于记录关于已经完成的口译服务的详情；对于此种目的，则请采用所建议的口译行动原始型ACTION.interpretation。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fi" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fi"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.language.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-language-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SFS-Kielikoodisto"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SFS-Kielikoodisto" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "AA",
+                    "value" : "afar"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "AB",
+                    "value" : "abhaasi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "AE",
+                    "value" : "avesta"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "AF",
+                    "value" : "afrikaans"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "AK",
+                    "value" : "akan"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "AM",
+                    "value" : "amhara"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "AR",
+                    "value" : "arabia"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "AS",
+                    "value" : "assami"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "AV",
+                    "value" : "avaari"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "AY",
+                    "value" : "aimara"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "AZ",
+                    "value" : "azeri,azerbaidžani"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "BA",
+                    "value" : "baškiiri"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "BE",
+                    "value" : "valkovenäjä"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "BG",
+                    "value" : "bulgaria"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "BH",
+                    "value" : "bihari"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "BI",
+                    "value" : "bislama"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "BM",
+                    "value" : "bambara"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "BN",
+                    "value" : "bengali"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "BO",
+                    "value" : "tiibet"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "BR",
+                    "value" : "bretoni"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "BS",
+                    "value" : "bosnia"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "CA",
+                    "value" : "katalaani"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "CE",
+                    "value" : "tšetšeeni"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "CH",
+                    "value" : "tšamorro"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "CO",
+                    "value" : "korsika"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "CR",
+                    "value" : "cree"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "CS",
+                    "value" : "tšekki"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "CU",
+                    "value" : "kirkkoslaavi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "CV",
+                    "value" : "tšuvassi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "CY",
+                    "value" : "kymri, wales"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "DA",
+                    "value" : "tanska"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "DE",
+                    "value" : "saksa"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "DV",
+                    "value" : "divehi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "DZ",
+                    "value" : "dzongkha,bhutani"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "EE",
+                    "value" : "ewe"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "EL",
+                    "value" : "kreikka,uuskreikka"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "EN",
+                    "value" : "englanti"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "EO",
+                    "value" : "esperanto"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "ES",
+                    "value" : "espanja"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "ET",
+                    "value" : "viro, eesti"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "EU",
+                    "value" : "baski,euskera,euskara"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "FA",
+                    "value" : "farsi,persia"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "FF",
+                    "value" : "fulfulde,fulani"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "FI",
+                    "value" : "suomi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "FJ",
+                    "value" : "fidži"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "FO",
+                    "value" : "fääri"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "FR",
+                    "value" : "ranska"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "FY",
+                    "value" : "friisi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "GA",
+                    "value" : "iiri"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "GD",
+                    "value" : "gaeli"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "GL",
+                    "value" : "galicia"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "GN",
+                    "value" : "guarani"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "GU",
+                    "value" : "gudžarati"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "GV",
+                    "value" : "manksi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "HA",
+                    "value" : "hausa"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "HE",
+                    "value" : "heprea"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "HI",
+                    "value" : "hindi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "HO",
+                    "value" : "hiri-motu"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "HR",
+                    "value" : "kroatia"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "HU",
+                    "value" : "unkari"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "HY",
+                    "value" : "armenia"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "HZ",
+                    "value" : "herero"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "IA",
+                    "value" : "interlingua"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "ID",
+                    "value" : "indonesia,bahasa indonesia"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "IE",
+                    "value" : "interlingue"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "IG",
+                    "value" : "igbo,ibo"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "IK",
+                    "value" : "inupiaq,inupiatun"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "IO",
+                    "value" : "ido"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "IS",
+                    "value" : "islanti"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "IT",
+                    "value" : "italia"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "IU",
+                    "value" : "inuktitut"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "JA",
+                    "value" : "japani"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "JV",
+                    "value" : "jaava"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KA",
+                    "value" : "georgia"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KG",
+                    "value" : "kongo,kikongo"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KI",
+                    "value" : "kikuju"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KJ",
+                    "value" : "kwanjama,kuanjama"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KK",
+                    "value" : "kazakki"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KL",
+                    "value" : "grönlanti,kalaallisut"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KM",
+                    "value" : "khmer,kambodža"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KN",
+                    "value" : "kannada"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KO",
+                    "value" : "korea"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KR",
+                    "value" : "kanuri"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KS",
+                    "value" : "kašmiri"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KU",
+                    "value" : "kurdi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KV",
+                    "value" : "komi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KW",
+                    "value" : "korni"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "KY",
+                    "value" : "kirgiisi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "LA",
+                    "value" : "latina"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "LB",
+                    "value" : "luxemburg,letzeburg"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "LG",
+                    "value" : "ganda,luganda"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "LN",
+                    "value" : "lingala"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "LO",
+                    "value" : "lao"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "LT",
+                    "value" : "liettua"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "LU",
+                    "value" : "luba,katanganluba"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "LV",
+                    "value" : "latvia"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "MG",
+                    "value" : "malagasi,madagassi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "MH",
+                    "value" : "marshall"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "MI",
+                    "value" : "maori"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "MK",
+                    "value" : "makedonia"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "ML",
+                    "value" : "malajalam"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "MN",
+                    "value" : "mongoli"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "MO",
+                    "value" : "moldavia"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "MR",
+                    "value" : "marathi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "MS",
+                    "value" : "malaiji"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "MT",
+                    "value" : "malta"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "MY",
+                    "value" : "burma"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "NA",
+                    "value" : "nauru"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "NB",
+                    "value" : "norjan bokmål"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "ND",
+                    "value" : "pohjoisndebele"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "NE",
+                    "value" : "nepali"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "NG",
+                    "value" : "ndonga"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "NL",
+                    "value" : "hollanti"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "NN",
+                    "value" : "norjan nynorsk"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "NO",
+                    "value" : "norja"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "NR",
+                    "value" : "eteländebele"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "NV",
+                    "value" : "navajo"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "NY",
+                    "value" : "njandža,tšitšewa,tšewa"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "OC",
+                    "value" : "oksitaani"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "OJ",
+                    "value" : "odžibwa"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "OM",
+                    "value" : "oromo,afan oromo"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "OR",
+                    "value" : "orija"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "OS",
+                    "value" : "osseetti"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "PA",
+                    "value" : "pandžab"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "PI",
+                    "value" : "paali"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "PL",
+                    "value" : "puola"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "PS",
+                    "value" : "paštu, afgaani"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "PT",
+                    "value" : "portugali"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "QU",
+                    "value" : "ketšua"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "RM",
+                    "value" : "retoromaani"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "RN",
+                    "value" : "rundi,kirundi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "RO",
+                    "value" : "romania"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "RU",
+                    "value" : "venäjä"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "RW",
+                    "value" : "ruanda,kinjaruanda,njaruanda"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SA",
+                    "value" : "sanskrit"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SC",
+                    "value" : "sardi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SD",
+                    "value" : "sindhi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SE",
+                    "value" : "pohjoissaame"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SG",
+                    "value" : "sango"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SH",
+                    "value" : "serbokroatia,serbokroaatti"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SI",
+                    "value" : "singali,sinhala"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SK",
+                    "value" : "slovakki"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SL",
+                    "value" : "sloveeni"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SM",
+                    "value" : "samoa"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SN",
+                    "value" : "shona"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SO",
+                    "value" : "somali"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SQ",
+                    "value" : "albania"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SR",
+                    "value" : "serbia"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SS",
+                    "value" : "swazi,siswati"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "ST",
+                    "value" : "sotho, eteläsotho"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SU",
+                    "value" : "sunda"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SV",
+                    "value" : "ruotsi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "SW",
+                    "value" : "swahili,suahili"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "TA",
+                    "value" : "tamili"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "TE",
+                    "value" : "telugu"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "TG",
+                    "value" : "tadžikki"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "TH",
+                    "value" : "thai"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "TI",
+                    "value" : "tigrinja"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "TK",
+                    "value" : "turkmeeni"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "TL",
+                    "value" : "tagalog,pilipino"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "TN",
+                    "value" : "tswana"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "TO",
+                    "value" : "tongantonga"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "TR",
+                    "value" : "turkki"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "TS",
+                    "value" : "tsonga"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "TT",
+                    "value" : "tataari"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "TW",
+                    "value" : "twi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "TY",
+                    "value" : "tahiti"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "UG",
+                    "value" : "uiguuri"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "UK",
+                    "value" : "ukraina"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "UR",
+                    "value" : "urdu"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "UZ",
+                    "value" : "uzbekki"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "WA",
+                    "value" : "valloni"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "VE",
+                    "value" : "venda"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "VI",
+                    "value" : "vietnam"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "VO",
+                    "value" : "volapük"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "WO",
+                    "value" : "wolof"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "XH",
+                    "value" : "xhosa"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "YI",
+                    "value" : "jiddiš,jiddi"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "YO",
+                    "value" : "joruba"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "ZA",
+                    "value" : "zhuang"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "ZH",
+                    "value" : "kiina"
+                  }, {
+                    "terminologyId" : "SFS-Kielikoodisto",
+                    "code" : "ZU",
+                    "value" : "zulu"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0006.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0007", "at0008", "at0009", "at0010", "at0012" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0004.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "nb" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Language to use in communication",
+            "description" : "A collection of words, their pronunciation and methods for combining them, understood by a specific community and used as a form of communication."
+          }
+        },
+        "zh-cn" : { },
+        "de" : { },
+        "fi" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "273b5c2c-cf19-4fbf-bba5-eed2ec4860b1",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjoern Arntzen, John Tore Valand",
+        "organisation" : "Oslo universitetssykehus HF, Helse Bergen HF"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "Taikang Insurance Group",
+        "email" : "linforest@163.com"
+      },
+      "accreditation" : "?",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fi"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nn"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fr"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fi"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh-cn"
+    },
+    "author" : {
+      "name" : "Lin Zhang",
+      "organisation" : "Freelancer",
+      "email" : "linforest@163.com"
+    },
+    "otherDetails" : { }
+  } ]
+}
