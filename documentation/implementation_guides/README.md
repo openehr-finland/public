@@ -24,7 +24,7 @@ In each implementation guide there are directives on how to do and they should b
 
 - MUST (MUST)
 -- This is an absolute requirement, no exceptions
-- MUST NOTE (NOT)
+- MUST NOT (NOT)
 -- This is absolutely forbidden, no exceptions
 - SHOULD (SHOULD)
 -- This should be followed, exceptions are allowed for a justified reason
@@ -37,15 +37,15 @@ Attachments that should be part of the published implementation guide are last p
 
 ## Management of associated models
 
-Models (Archetypes and templates) created with the development of an implementation guide should be handled in accordance with seperate quides (TBD). In conclusion, the work will take place in a separate projects at first. When the work is to be sent on referral, a release containing the models should be included. When the work is considered ready and ready to be published (in accordance with the rules specified in the chapter hereinafter referred to as “Review and publification process”).
+Models (archetypes and templates) created with the development of an implementation guide should be handled in accordance with seperate guides (TBD). Therefore, the work will take place in separate projects at first. When the work is to be sent for review, a release containing the models should be included. When the work is considered ready and ready to be published (in accordance with the rules specified in the chapter hereinafter referred to as “Review and publification process”).
 
 ## Translation
 
-All implementation guides are written in English to make it more accessible. The Finnish translation of the implementation guide can be added as a subpage to the English version.
+All implementation guides are written in English to make them more accessible. Finnish translations of the implementation guides can be added as subpages to the English versions.
 
 ## Review and publification process
 
-When the implementation guide is considered ready to be reviewed, the request for comments and approval process must be implemented as described on page [https://github.com/openehr-finland/public/documentation/](https://github.com/openehr-finland/public/blob/main/documentation/README.md).
+When the implementation guide is considered ready to be reviewed, a request for comments and official approval process must be implemented as described on page [https://github.com/openehr-finland/public/documentation/](https://github.com/openehr-finland/public/blob/main/documentation/README.md).
 
 When the implementation guide is considered to be revised and completed, this should be lifted to openEHR Finland as an organization by taking this up at an administrative meeting. There, the guide must be approved as final before publication before the publication itself. This also applies to when the guide should go from Trial to Stable.
 
