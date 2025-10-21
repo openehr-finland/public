@@ -60,11 +60,10 @@ Up-to-date contact information for contacting openEHR Finland can be found at ht
 | --- | --- | --- |
 | Identify and investigate the local need for translation. | Local actor |  |
 | Check if there is a translation in CKM, openerEHR Finland Github repository or by asking openEHR Finland. | Local actor | User rights to CKM and GitHub are needed! |
-| Translate the archetype, or the archetypes from scratch or continue on the previous translation (if available). Follow guidelines described on this page. | Local actor | |
-| Review the translation in local group. | Local actor | |
+| Translate the archetype, or the archetypes from scratch or continue on the previous translation (if available). | Local actor | |
 | Review the translation in local group. | Local actor | |
 | Contact openEHR Finland to announce that there is a translation ready for formal review. | Local actor | Commit the archetype openEHR Finland's GitHub [draft repository](https://github.com/openehr-finland/openehr-finland) and contact openEHR Finland. |
-| Make decisions on the translation quality is sufficient for a formal review | OpenEHR Finland | Check out the translation and commit it to CKM. |
+| Make a decision on whether the translation quality is sufficient for a formal review | openEHR Finland | Check out the translation and commit it to CKM. |
 
 **Formal review**
 | Task | Actor | Additional information |
@@ -106,8 +105,8 @@ The openEHR templates are created in Finnish. The recommendation is that the arc
 Do not use English abbreviations, unless they are very well rooted in the Finnish medical vocabulary (formally, not in speech).
 
 **Simple and straight formulations**
-Write briefly and clearly; avoid multi-ordid and complicated formulations.
-Do not be afraid to devie from the original if the formulation becomes clumsy in Finnish.
+Write briefly and clearly; avoid multi-worded and complicated formulations.
+Do not be afraid to deviate from the original if the formulation becomes clumsy in Finnish.
 Example: Write “The respiratory rate is...” instead of “The remortmity of the respiratory rate is...”
 
 **Definite or indefinite form**
@@ -124,7 +123,7 @@ Use comma as decimal point.
 Example Write "39,6 degrees", not "39.6 degrees."
 
 **Semicolon**
-Use the semicolon, but be careful. English uses semicolon in a slightly different way and often a little more generous than Finnish does.
+Use the semicolon, but be careful. English uses semicolon in a slightly different way and often a little more generously than Finnish does.
 
 **Units**
 Follow the SNOMED Guidelines.
