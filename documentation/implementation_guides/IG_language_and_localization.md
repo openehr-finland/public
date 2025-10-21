@@ -91,7 +91,7 @@ All new archetypes are authored in English first and then translated into Finnis
 
 Always try to use well-established and defined Finnish terms in translations, which can be found in e.g. of the following services:
 - [National code server](https://koodistopalvelu.kanta.fi/codeserver/)
-- [National vocabulary service](https://sotesanastot.thl.fi/termed-publish-server/vocabularies)
+- [National vocabulary service](https://sotesanastot.thl.fi/vocabularies)
 - Snomed CT and ICD10/11 translations
 
 It should be noted that according to the recommendations of the international openEHR community, translation work should refrain from changing the original meaning and descriptions of the archetypes. However, somethimes the examples and recommendations in the original English descriptions of the archetypes can either be changed to reflect the Finnish operating environment or left out completely. If in the descriptions or other definitions of the original archetype, too specific levels are identified, which cause problems in the national localization work, these observations can be reported to the international community in the form of proposals for changes.
