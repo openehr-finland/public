@@ -1,6 +1,6 @@
 # The well-being information reported by the citizen/patient/customer himself (MUST) 
 
-> **STATUS:** TRIAL
+> **STATUS:** STABLE
 
 ## Version history
 
@@ -9,6 +9,7 @@
 | 0.0.1 | 22.10.2024 | initial version | Henri Huttunen |
 | 0.0.2 | 23.10.2024 | Added examples | Riikka Lahtela |
 | 0.8.0 | 10.12.2024 | prepared guide for review | Henri Huttunen |
+| 1.0 | 24.2.2026 | Version approved by HL7 Finland ry member vote<br/>OID 1.2.246.777.11.2026.3 | HL7 Finland |
 
 ## Terminology
 
