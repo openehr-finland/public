@@ -10,7 +10,7 @@
 | 0.0.2 | 7.11.2024 | added implementation overview | Riikka Lahtela |
 | 0.4.0 | 14.11.2024 | added most of the contents | Henri Huttunen |
 | 0.8.0 | 10.12.2024 | prepared guide for review | Henri Huttunen |
-| 1.0 OID 1.2.246.777.11.2026.3| 24.2.2026 | Version approved by HL7 Finland ry member vote | Henri Huttunen |
+| 1.0 | 24.2.2026 | Version approved by HL7 Finland ry member vote<br/>OID 1.2.246.777.11.2026.3 | HL7 Finland |
 
 ## Terminology
 
